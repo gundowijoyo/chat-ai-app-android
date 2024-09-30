@@ -7,3 +7,4 @@ hasil ending nya 🌝
 ```bash
 https://gundowijoyo.my.id/api/gpt/
 ``` 
+#    *Jangan Lupa Buid Ya Teman*
