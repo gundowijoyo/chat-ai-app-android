@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<ImageView
+android:id="@+id/image_view"
+android:layout_width="0dp"
+android:layout_height="0dp"
+android:layout_marginTop="16dp"
+android:layout_marginBottom="16dp"
+android:layout_marginStart="16dp"
+android:layout_marginEnd="16dp"
+android:src="@drawable/app_logo" 
+app:layout_constraintBottom_toTopOf="@+id/text_view_description"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/text_view_title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_marginEnd="16dp"
+android:text="Judul Halaman" 
+android:textSize="24sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toTopOf="@+id/text_view_description"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/text_view_description"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_marginEnd="16dp"
+android:text="Deskripsi halaman ini menjelaskan apa yang akan Anda temukan dalam aplikasi ini. Dengan antarmuka yang ramah pengguna, Anda dapat menjelajahi berbagai fitur yang akan memudahkan penggunaan aplikasi ini."
+android:textSize="16sp"
+app:layout_constraintBottom_toTopOf="@+id/chat"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+<LinearLayout
+android:id="@+id/chat"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_margin="10dp"
+android:background="@drawable/border"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintHorizontal_bias="1.0">
+
+<Button
+android:id="@+id/intro_next_button"
+android:layout_width="40dp"
+android:layout_height="40dp"
+android:background="?attr/selectableItemBackgroundBorderless"
+android:contentDescription="Send"
+android:src="@android:drawable/ic_menu_send" />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
